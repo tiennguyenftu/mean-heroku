@@ -31,6 +31,10 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
     });
 });
 
+app.get('/', function (req, res) {
+    res.send('Welcome to my Contact app');
+});
+
 //CONTACT API ROUTES
 
 //generic error handler
